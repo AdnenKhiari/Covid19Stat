@@ -1,0 +1,114 @@
+@import "utils";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input,
+option,
+button,
+select {
+    outline: none;
+    border: none;
+}
+
+select,
+option {
+    padding: 5px;
+    font-family: $sd-font;
+    font-size: 1.5rem;
+}
+
+body {
+    background: $red;
+    font-family: $pm-font;
+    overflow-x: hidden;
+    display: relative;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+.beautiful-link {
+    display: inline;
+    font-size: 1.5rem;
+    font-family: $sd-font;
+    font-weight: 100;
+    border-bottom: 2.5px solid $rose;
+    color: $blue;
+    font-style: italic;
+    transition: all 200ms ease-in-out;
+    margin-bottom: 5px;
+    &:hover {
+        padding-left: 7px;
+    }
+}
+
+.maingrid {
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    align-content: flex-start;
+    position: relative;
+    min-height: 100%;
+}
+
+.main-content {
+    background: $white;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.fof {
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    display: flex;
+    font-size: 4rem;
+}
+
+.main-selector {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0px;
+    justify-content: flex-start;
+    flex-direction: row;
+    text-transform: capitalize;
+    h1 {
+        margin-left: 50px;
+        font-family: $sd-font;
+    }
+    select {
+        margin-left: 20px;
+        min-width: 200px;
+        text-transform: capitalize;
+    }
+}
+
+.graph-container {
+    width: 100%;
+    padding: 10px 0px 0px 30px;
+}
+
+#root {
+    position: relative;
+}
+
+@media screen and (max-width: 500px) {
+    .maingrid {
+        display: block;
+    }
+    .main-content {
+        max-width: 100%;
+    }
+}
+
+
+/*
+<div>Icônes conçues par <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/fr/" title="Flaticon">www.flaticon.com</a></div>*/

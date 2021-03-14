@@ -1,0 +1,115 @@
+@import "utils";
+.on {
+    transition: all 200ms ease-in-out;
+    transform: translateX(0%);
+}
+
+.show {
+    opacity: 0;
+    display: none;
+    position: fixed;
+    top: 15px;
+    left: 15px;
+    background: $red;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    z-index: 10000000;
+    transition: all 200ms ease-in-out;
+    box-shadow: 0px 0px 5px 1px rgba(20, 20, 20, 0.5);
+}
+
+.open {
+    transform: scale(1.15) translateY(15px);
+    border: 1px solid $white;
+    background: $blue;
+}
+
+nav {
+    transition: all 200ms ease-in-out;
+    z-index: 9;
+    font-family: $sd-font;
+    color: $white;
+    font-style: italic;
+    font-size: 1.2rem;
+    min-width: 225px;
+    .#{&}__holder {
+        width: 100%;
+        position: fixed;
+        width: 225px;
+        left: 0;
+    }
+    h1 {
+        background-color: $black;
+        color: $white;
+        padding-bottom: 20px;
+        width: 250;
+        font-size: 2rem;
+        letter-spacing: 0.2rem;
+        padding-top: 20px;
+        font-weight: 300;
+        text-align: center;
+    }
+    .#{&}__navigation {
+        width: 225;
+        padding: 20px 0px;
+        padding-bottom: 50px;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        li {
+            padding-left: 15px;
+            width: 200;
+            letter-spacing: 0.08rem;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            align-content: center;
+            transition: 200ms all ease-in;
+            &:hover {
+                cursor: pointer;
+                background: rgba(20, 20, 20, 1);
+                a {
+                    color: $blue;
+                    transform: translateX(5px);
+                }
+                img {
+                    filter: invert(1);
+                }
+            }
+            a {
+                transition: 200ms all ease-in;
+                padding-left: 10px;
+                line-height: 4rem;
+                width: 100%;
+            }
+            img {
+                transition: 200ms all ease-in;
+                transform: scale(0.9);
+                display: inline;
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    nav {
+        transform: translateX(-100%);
+        position: fixed;
+        left: 0;
+        top: 0;
+        height: 100%;
+        background: $red;
+        z-index: 1100;
+        * {
+            z-index: 1100;
+        }
+    }
+    .show {
+        display: block;
+        opacity: 1;
+    }
+}

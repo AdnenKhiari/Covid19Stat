@@ -1,0 +1,41 @@
+@import "utils";
+.leaflet-container {
+    height: 100vh;
+    width: 100%;
+}
+
+//https://cdnjs.com/libraries/Leaflet.awesome-markers
+.popUp {
+    margin-bottom: 10px;
+}
+
+.leaflet-div-icon {
+    background: transparent;
+    border: none;
+}
+
+.stat-header {
+    h1 {
+        font-size: 4rem;
+        width: fit-content;
+        letter-spacing: 0.1rem;
+        font-family: $sd-font;
+        padding-left: 40px;
+        border-bottom: 2px solid $rose;
+        padding-bottom: 5px;
+    }
+    margin-bottom: 0px;
+    margin-top: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    .stat-header {
+        h1 {
+            font-size: 2rem;
+        }
+    }
+    .leaflet-container {
+        height: 90vh;
+        max-width: 100%;
+    }
+}

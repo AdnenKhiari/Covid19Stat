@@ -1,0 +1,17 @@
+@import "./utils";
+.bubble {
+    width: 25px;
+    height: 25px;
+    background: $blue;
+    border-radius: 50%;
+}
+
+.bubbleMain {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+}

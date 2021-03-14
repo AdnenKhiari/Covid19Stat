@@ -1,0 +1,93 @@
+@import "./utils";
+.source {
+    display: block;
+    padding: 20px 0px;
+    font-size: 1rem;
+    margin-left: 50px;
+    span {
+        font-size: 1.25rem;
+    }
+}
+
+.vaccine {
+    width: 100%;
+    min-width: 100%;
+    padding-left: 50px;
+    vertical-align: center;
+    margin-top: 20px;
+    #{&}__list-element {
+        width: 100%;
+        display: flex;
+        max-width: 1500px;
+        flex-direction: column;
+        .element-header {
+            cursor: pointer;
+            padding: 10px;
+            font-size: 1.1rem;
+            width: 100%;
+            max-width: 100%;
+            display: grid;
+            overflow-wrap: break-word;
+            grid-template-columns: 1fr 1fr 0.4fr;
+            * {
+                overflow-wrap: break-word;
+            }
+            i {
+                text-align: right;
+                padding-right: 20px;
+                font-size: 2rem;
+                color: $blue;
+            }
+        }
+        .element-body {
+            padding: 5px;
+            margin-top: 15px;
+            * {
+                margin: 10px 0px;
+            }
+            width: 100%;
+            h2 {
+                color: $red;
+            }
+            p {
+                padding: 5px 5px;
+                width: 100%;
+                max-height: 400px;
+                overflow-y: auto;
+                font-size: 1.2rem;
+            }
+            .active {}
+        }
+        .active {
+            background: $black;
+            color: $blue;
+            font-size: 1.4rem;
+            &:first-child {
+                font-family: $sd-font;
+            }
+            i {
+                color: $red;
+            }
+        }
+        border-bottom: 2px solid $blue;
+        margin-top: 20px;
+    }
+    .active {
+        background: rgba(245, 245, 245, 1);
+        border-bottom: 0 solid $blue;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .vaccine {
+        max-width: 100%;
+        margin-top: 0px;
+        padding-top: 0px;
+        width: 100%;
+        padding-left: 0px;
+        h2,
+        h3 {
+            font-size: 1rem;
+        }
+    }
+}

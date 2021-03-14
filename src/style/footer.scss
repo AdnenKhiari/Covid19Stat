@@ -1,0 +1,14 @@
+@import "utils";
+footer {
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-items: center;
+    font-size: 0.5rem;
+    z-index: 10;
+    background: $black;
+    color: gray;
+    text-align: center;
+    width: 100vw;
+}
