@@ -35,7 +35,7 @@ function App() {
     console.log("www " ,countriesSummaryStat,countriesSummaryStatLoading,countriesSummaryStatError)*/
   }, [tsData,allData,tsDataLoading,allDataError,tsDataError,allDataLoading,worldTsData]);
   return (<>
-        <Router>
+        <Router basename ={process.env.PUBLIC_URL}>
         <div ref={show} className="show" onClick={ ()=> nv && toggleMenu()}></div>
 
         <div className="maingrid">

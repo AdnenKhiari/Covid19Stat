@@ -46,8 +46,8 @@ const CustomCountry = ( {allData,map,tsData,tsDataLoading,allDataLoading,dayCoun
         }
             }
        }
-       if(!countriesSummaryStatLoading)
-       console.log(countriesSummaryStat ,"new")
+      /* if(!countriesSummaryStatLoading)
+       console.log(countriesSummaryStat ,"new")*/
     }, [tsData,allData,mydata,country,province,tsDataLoading,allDataLoading,dayCount,countriesSummaryStatLoading])
 
         return(<>

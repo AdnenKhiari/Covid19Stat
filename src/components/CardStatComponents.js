@@ -3,9 +3,9 @@ import React from "react"
 import Loading from "./Loading"
 
 const CardStatComponent = ({ data, dataLoading, lastData, lastDataLoading ,arr}) => {
-    React.useEffect(()=> {
+   /* React.useEffect(()=> {
         console.log(data,lastData)
-    },[lastData,data])
+    },[lastData,data])*/
     return <>
         <div className ="stat-header">
     <h1 >Summary Statistics :</h1>

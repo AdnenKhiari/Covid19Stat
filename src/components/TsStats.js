@@ -167,11 +167,11 @@ const processDT =  (type,moreData)=>{
 }
 
 const CountryStat = ({title,stat,historicalData,mydata})=>{
-  React.useEffect(() => {
+  /*React.useEffect(() => {
     console.log(mydata,"hist")
     return () => {
     };
-  }, [mydata]);
+  }, [mydata]);*/
     return<>
     <div className ="stat-header">
     <h1 >{title}</h1>
