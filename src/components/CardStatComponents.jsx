@@ -10,10 +10,12 @@ const CardStatComponent = ({ data, dataLoading, lastData, lastDataLoading ,arr})
         <div className ="stat-header">
     <h1 >Summary Statistics :</h1>
     </div>
-    {( !dataLoading && !lastDataLoading)? <React.Suspense fallback={<Loading/>}>< Card data = { data }
+    {( !dataLoading && !lastDataLoading)? <React.Suspense fallback={<Loading/>}>
+    < Card data = { data }
     lastData = { lastData }
     dataArray = { arr}
-    /> </React.Suspense> : <Loading/> }
+    /> 
+    </React.Suspense> : <Loading/> }
     </>
 }
 
