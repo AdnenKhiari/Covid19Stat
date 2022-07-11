@@ -6,13 +6,13 @@ pipeline{
     stages{
         stage("build"){
             steps{
-                bash "npm ci --only=production"
-                bash "npm run build"
+                sh "npm ci --only=production"
+                sh "npm run build"
             }
         }
         stage("deploy"){
             steps{
-                bash "npm run deploy"
+                sh "npm run deploy"
             }
         }
     }
