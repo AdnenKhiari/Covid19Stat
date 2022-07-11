@@ -35,7 +35,7 @@ function App() {
     console.log("www " ,countriesSummaryStat,countriesSummaryStatLoading,countriesSummaryStatError)*/
   }, [tsData,allData,tsDataLoading,allDataError,tsDataError,allDataLoading,worldTsData]);
   return (<>
-        <Router basename ={process.env.NODE_ENV !== 'production' ? "https://adnenkhiari.github.io/Covid19Stat/" : '.'}>
+        <Router basename ={process.env.NODE_ENV === 'production' ? "https://adnenkhiari.github.io/Covid19Stat/" : '.'}>
         <div ref={show} className="show" onClick={ ()=> nv && toggleMenu()}></div>
 
         <div className="maingrid">
