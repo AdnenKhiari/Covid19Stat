@@ -1,14 +1,18 @@
 pipeline{
     agent any
+    tools{
+        nodejs 'node16'
+    }
     stages{
         stage("build"){
             steps{
-                echo "I'm testing the build"
+                bash "npm ci --only=production"
+                bash "npm run build"
             }
         }
         stage("deploy"){
             steps{
-                echo "I'm Deploying"
+                bash "npm run deploy"
             }
         }
     }
