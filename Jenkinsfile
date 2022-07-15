@@ -12,10 +12,10 @@ pipeline{
         }
         stage("deploy"){
             steps{
-                withCredentials([usernamePassword(credentialsId: 'AdnenKhGIT',usernameVariable: 'USER',passwordVariable:'PASS')]){
-                    git "config --global user.name 'AdnenKhiari' && config --global user.email '$USER' && git config --global user.password '$PASS'"                
+                withCredentials([gitUsernamePassword(credentialsId: 'AdnenKhGIT',gitToolName: 'git-tool')]){
+                    git "config user.name 'AdnenKhiari'" 
+                    sh "npm run deploy"
                 }
-                sh "npm run deploy"
             }
         }
     }
