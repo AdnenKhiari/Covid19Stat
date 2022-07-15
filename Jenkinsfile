@@ -6,6 +6,7 @@ pipeline{
     stages{
         stage("build"){
             steps{
+                cleanWs()
                 sh "npm ci --only=production"
                 sh "CI=false && npm run build"
             }
