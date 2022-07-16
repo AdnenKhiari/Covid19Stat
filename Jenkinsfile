@@ -4,9 +4,13 @@ pipeline{
         nodejs 'node16'
     }
     stages{
+        stage("Output"){
+            steps[
+                sh "ls -l"
+            ]
+        }
         stage("build"){
             steps{
-                cleanWs()
                 sh "npm ci --only=production"
                 sh "CI=false && npm run build"
             }
