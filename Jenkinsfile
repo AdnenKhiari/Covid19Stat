@@ -5,9 +5,9 @@ pipeline{
     }
     stages{
         stage("Output"){
-            steps[
+            steps{
                 sh "ls -l"
-            ]
+            }
         }
         stage("build"){
             steps{
