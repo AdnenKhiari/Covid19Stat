@@ -12,7 +12,7 @@ pipeline{
         stage("build"){
             steps{
                 sh "npm ci --only=production"
-                sh "CI=false && npm run build"
+                sh "CI=false && NODE_ENV=production && npm run build"
             }
         }
         stage("deploy"){
