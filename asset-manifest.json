@@ -1,30 +1,30 @@
 {
   "files": {
-    "main.css": "/AdnenKhiari/Covid19Stat/static/css/main.1aef7f84.chunk.css",
-    "main.js": "/AdnenKhiari/Covid19Stat/static/js/main.bc5e7f29.chunk.js",
-    "main.js.map": "/AdnenKhiari/Covid19Stat/static/js/main.bc5e7f29.chunk.js.map",
+    "main.css": "/AdnenKhiari/Covid19Stat/static/css/main.21bcc729.chunk.css",
+    "main.js": "/AdnenKhiari/Covid19Stat/static/js/main.eb03f91d.chunk.js",
+    "main.js.map": "/AdnenKhiari/Covid19Stat/static/js/main.eb03f91d.chunk.js.map",
     "runtime-main.js": "/AdnenKhiari/Covid19Stat/static/js/runtime-main.b57629ba.js",
     "runtime-main.js.map": "/AdnenKhiari/Covid19Stat/static/js/runtime-main.b57629ba.js.map",
-    "static/js/2.13c21998.chunk.js": "/AdnenKhiari/Covid19Stat/static/js/2.13c21998.chunk.js",
-    "static/js/2.13c21998.chunk.js.map": "/AdnenKhiari/Covid19Stat/static/js/2.13c21998.chunk.js.map",
+    "static/js/2.2a542f11.chunk.js": "/AdnenKhiari/Covid19Stat/static/js/2.2a542f11.chunk.js",
+    "static/js/2.2a542f11.chunk.js.map": "/AdnenKhiari/Covid19Stat/static/js/2.2a542f11.chunk.js.map",
     "static/js/3.5377c04d.chunk.js": "/AdnenKhiari/Covid19Stat/static/js/3.5377c04d.chunk.js",
     "static/js/3.5377c04d.chunk.js.map": "/AdnenKhiari/Covid19Stat/static/js/3.5377c04d.chunk.js.map",
     "index.html": "/AdnenKhiari/Covid19Stat/index.html",
-    "static/css/main.1aef7f84.chunk.css.map": "/AdnenKhiari/Covid19Stat/static/css/main.1aef7f84.chunk.css.map",
-    "static/js/2.13c21998.chunk.js.LICENSE.txt": "/AdnenKhiari/Covid19Stat/static/js/2.13c21998.chunk.js.LICENSE.txt",
+    "static/css/main.21bcc729.chunk.css.map": "/AdnenKhiari/Covid19Stat/static/css/main.21bcc729.chunk.css.map",
+    "static/js/2.2a542f11.chunk.js.LICENSE.txt": "/AdnenKhiari/Covid19Stat/static/js/2.2a542f11.chunk.js.LICENSE.txt",
     "static/media/coronavirus.0deba33a.svg": "/AdnenKhiari/Covid19Stat/static/media/coronavirus.0deba33a.svg",
-    "static/media/down-arrow.9c118ba0.svg": "/AdnenKhiari/Covid19Stat/static/media/down-arrow.9c118ba0.svg",
-    "static/media/home.f8e4c7eb.svg": "/AdnenKhiari/Covid19Stat/static/media/home.f8e4c7eb.svg",
+    "static/media/down-arrow.7a751994.svg": "/AdnenKhiari/Covid19Stat/static/media/down-arrow.7a751994.svg",
+    "static/media/home.5f7a5afd.svg": "/AdnenKhiari/Covid19Stat/static/media/home.5f7a5afd.svg",
     "static/media/marker.41614c22.svg": "/AdnenKhiari/Covid19Stat/static/media/marker.41614c22.svg",
     "static/media/syringe.e62c180c.svg": "/AdnenKhiari/Covid19Stat/static/media/syringe.e62c180c.svg",
     "static/media/test-sanguin.b3ec0703.svg": "/AdnenKhiari/Covid19Stat/static/media/test-sanguin.b3ec0703.svg",
-    "static/media/up-arrow.4f6a4c89.svg": "/AdnenKhiari/Covid19Stat/static/media/up-arrow.4f6a4c89.svg",
+    "static/media/up-arrow.d4184d9f.svg": "/AdnenKhiari/Covid19Stat/static/media/up-arrow.d4184d9f.svg",
     "static/media/virus.73147dc7.svg": "/AdnenKhiari/Covid19Stat/static/media/virus.73147dc7.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.b57629ba.js",
-    "static/js/2.13c21998.chunk.js",
-    "static/css/main.1aef7f84.chunk.css",
-    "static/js/main.bc5e7f29.chunk.js"
+    "static/js/2.2a542f11.chunk.js",
+    "static/css/main.21bcc729.chunk.css",
+    "static/js/main.eb03f91d.chunk.js"
   ]
 }
