@@ -18,7 +18,6 @@ pipeline{
         stage("deploy"){
             steps{
                 withCredentials([gitUsernamePassword(credentialsId: 'AdnenKhGIT',gitToolName: 'git-tool')]){
-                    git "config user.name 'AdnenKhiari'" 
                     sh "npm run deploy"
                 }
             }
