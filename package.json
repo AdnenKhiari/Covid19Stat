@@ -32,7 +32,6 @@
             "react-app/jest"
         ]
     },
-    "homepage": "https://github.com/AdnenKhiari/Covid19Stat",
     "browserslist": {
         "production": [
             ">0.2%",
